@@ -16,7 +16,7 @@ class App extends React.Component {
 
   search = (query) => {
     // to do: gify-api fetch
-    giphy("UKoCfpL2XndvUExoEX5cC2PcBeD0syxF").search({
+    giphy({ apiKey: "UKoCfpL2XndvUExoEX5cC2PcBeD0syxF", http: true }).search({
       q: query,
       rating: 'g',
       limit: 10
